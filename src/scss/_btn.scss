@@ -1,5 +1,6 @@
 .btn {
-  padding: 13px 23px;
+  padding: 13px 25px;
+  font-size: 16px;
   border-radius: calc($gap / 2);
 }
 
@@ -13,6 +14,7 @@
   background-color: $white;
 }
 
-.btn--light-green {
+.btn--dark-green {
+  color: $white;
   background-color: $greenSecondary;
 }

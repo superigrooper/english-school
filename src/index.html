@@ -56,11 +56,17 @@
 
 <body>
 
-</body>
+  <!-- header -->
   <header class="header">
+
+    <!-- container -->
     <div class="container header__container">
+
+      <!-- header nvigation -->
       <nav class="header__nav">
         <ul class="header__nav-list">
+
+          <!-- bav items -->
           <li class="header__nav-item"><a href="#home"    class="header__nav-link">Home</a></li>
           <li class="header__nav-item"><a href="#about"   class="header__nav-link">About</a></li>
           <li class="header__nav-item"><a href="#blog"    class="header__nav-link">Blog</a></li>
@@ -68,20 +74,65 @@
           <li class="header__nav-item"><a href="#courses" class="header__nav-link">Courses</a></li>
         </ul>
       </nav>
+
+      <!-- other info -->
       <div class="header__info">
+
+        <!-- header search -->
         <form action="#" class="header__form">
           <label for="header-search">
-            <input type="search" placeholder="Search" class="header__input">
+            <input type="search" placeholder="Search" class="header__input" aria-label="Поиск по сайту">
           </label>
         </form>
-        <a href="#" class="header__basket-link">
+
+        <!-- go to basket -->
+        <a href="#" class="header__basket-link" aria-label="Перейти в корзину">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="./img/sprite.svg#shopping_cart"></use>
           </svg>
           Cart
         </a>
-        <button class="header__signup-btn btn btn--light">Sign Up</button>
+
+        <!-- sign or log in -->
+        <button class="header__signup-btn btn btn--light" aria-label="Зарегестрироваться на сайте">Sign Up</button>
       </div>
     </div>
   </header>
+
+  <!-- main -->
+  <main class="main">
+
+    <!-- hero section -->
+    <section class="hero">
+
+      <!-- container -->
+      <div class="container hero__container">
+
+        <!-- main title -->
+        <h1 class="hero__title">Become an&nbsp;No-Code expert and find a&nbsp;job</h1>
+
+        <!-- decr -->
+        <p class="hero__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel molestie magna curabitur tincidunt nunc sit amet.
+        </p>
+
+        <!-- hero link -->
+       <div class="hero__links">
+
+        <!-- go to cources -->
+        <a href="#" class="btn btn--dark-green hero__link" aria-label="Посмотреть курсы">Explore Courses</a>
+
+        <!-- watch video  -->
+        <a href="#" class="btn hero__link-watch" aria-label="Смотреть видео о компании"><span>
+          Watch Video
+        </span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#watch-video"></use>
+          </svg>
+        </a>
+       </div>
+      </div>
+    </section>
+  </main>
+</body>
 </html>

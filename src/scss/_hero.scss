@@ -1,0 +1,30 @@
+.hero {
+  min-height: 1000px;
+  color: $white;
+  background-color: $greenPrimary;
+
+  &__container {
+    padding-top: 160px;
+    max-width: 60%;
+  }
+
+  &__title {
+    margin-bottom: calc($gap * 2);
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 67px;
+  }
+
+  &__desc {
+    margin-bottom: calc($gap * 2);
+  }
+
+  &__link-watch {
+    display: inline-flex;
+    color: inherit;
+
+    span {
+      margin-right: calc($gap / 2);
+    }
+  }
+}
