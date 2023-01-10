@@ -102,6 +102,12 @@ const favicon = () => {
     .pipe(gulpif(isProd, dest('./build')))
 }
 
+const webmanifest = () => {
+  return src('./src/site.webmanifest')
+    .pipe(gulpif(isDev, dest('./dev')))
+    .pipe(gulpif(isProd, dest('./build')))
+}
+
 const watchFiles = () => {
   browserSync.init({
       server: {
@@ -125,6 +131,7 @@ exports.images       = images;
 exports.scripts      = scripts;
 exports.resources    = resources;
 exports.favicon      = favicon;
+exports.webmanifest  = webmanifest;
 
-exports.dev  = parallel(html, styles, images, scripts, svgSprites, resources, favicon, watchFiles);
-exports.prod = series(clean, html, styles, images, scripts, resources, svgSprites, favicon);
+exports.dev  = parallel(html, styles, images, scripts, svgSprites, resources, favicon, webmanifest, watchFiles);
+exports.prod = series(clean, html, styles, images, scripts, resources, svgSprites, favicon, webmanifest);

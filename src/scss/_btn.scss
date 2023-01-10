@@ -1,0 +1,20 @@
+.btn {
+  padding: 13px 25px;
+  font-size: 16px;
+  border-radius: calc($gap / 2);
+}
+
+.btn--dark {
+  color: $white;
+  background-color: $bluePrimary;
+}
+
+.btn--light {
+  color: $bluePrimary;
+  background-color: $white;
+}
+
+.btn--dark-green {
+  color: $white;
+  background-color: $greenSecondary;
+}

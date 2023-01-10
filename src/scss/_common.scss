@@ -37,6 +37,9 @@ ol {
 body {
   position: relative;
   min-height: 100vh;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 18px;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -60,7 +63,6 @@ a {
 button {
   padding: 0;
   font-family: inherit;
-  font-size: inherit;
   border: none;
   outline: none;
   background-color: transparent;
@@ -69,4 +71,9 @@ button {
 
 button:active {
   transform: translateY(1px);
+}
+
+.container {
+  padding-inline: $paddingInline;
+  max-width: $containerMaxWidth;
 }
