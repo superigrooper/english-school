@@ -1,0 +1,33 @@
+.certs {
+  background-color: $greenPrimary;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 84px;
+  }
+
+  &__swiper {
+    min-height: 600px;
+  }
+
+  &__swiper-nav {
+    position: absolute;
+    top: 50%;
+    width: calc(2 * $gap);
+    height: calc(2 * $gap);
+    border: 1px solid $pinkPrimary;
+    border-radius: 100%;
+
+    &--prev {
+      left: $gap;
+    }
+
+    &--next {
+      right: $gap;
+    }
+  }
+
+} // certs

@@ -36,6 +36,7 @@
   <link rel="stylesheet" href="./assets/libs/css/choices.min.css">
   <link rel="stylesheet" href="./assets/libs/css/simplebar.min.css">
   <link rel="stylesheet" href="./assets/libs/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/libs/css/fancybox.min.css">
   <link rel="stylesheet" href="./assets/libs/css/normalize.css">
 
   <!-- main style -->
@@ -50,6 +51,7 @@
   <script src="./assets/libs/js/simplebar.min.js" defer></script>
   <script src="./assets/libs/js/swiper.bundle.min.js" defer></script>
   <script src="./assets/libs/js/tippy.min.js" defer></script>
+  <script src="./assets/libs/js/fancybox.min.js" defer></script>
 
   <!-- main script -->
   <script src="./js/app.js" defer></script>
@@ -101,17 +103,15 @@
   </header>
 
   <main class="page">
-    <div class="page__container container">
 
-      <section class="page__intro intro swiper">
+      <!-- <section class="page__intro intro swiper"> -->
 
-        <div class="intro__content">
+        <!-- <div class="intro__content">
           <h1 class="intro__title">Школа английского языка Марии Боярской</h1>
           <p class="intro__text">Школа английского языка Марии Боярской предлагает онлайн занятия по подготовке ОГЭ и
             ЕГЭ в мини-группах и индивидуально.
             Занятия включают тренировку аудирования, чтения, грамматики, расширение словарного запаса, словообразование,
             работу над произношением, подробный разбор письменных и устных заданий.</p>
-          <!-- <button class="make-order__btn btn btn--dark">Заказать расчёт</button> -->
         </div>
 
         <div class="intro__swiper-wrapper swiper-wrapper">
@@ -129,32 +129,9 @@
           Опыт преподавания - более 12 лет,
           кандидат наук, доцент, успешная практика подготовки к экзаменам онлайн и офлайн.
         </p>
-        <!-- <div class="about-me__content">
-          <div class="about-me__left-block left-block">
-            <div class="left-block__content-part">
-              <p class="left-block__text">Принимая во&nbsp;внимание показатели
-                успешности, перспективное планирование способствует подготовке и&nbsp;реализации новых принципов.</p>
-              <button class="left-block__btn btn">Подробнее</button>
-            </div>
-          </div>
-          <div class="about-me__right-block">
-            <div class="about-me__card card-principles">
-              <p class="about-me__card__text"><span>Консультация с&nbsp;широким
-                  активом</span> А также свежий взгляд на&nbsp;привычные вещи - безусловно открывает новые горизонты
-                для как
-                самодостаточных, так и&nbsp;внешне зависимых концептуальных решений.</p>
-            </div>
-            <div class="about-me__card card-quality">
-              <p class="about-me__card__text"><span>В&nbsp;своём стремлении повысить</span> Качество жизни, они
-                забывают, что
-                сплочённость команды профессионалов представляет собой интересный эксперимент проверки
-                прогресса профессионального сообщества.</p>
-            </div>
-          </div>
-        </div> -->
-      </section>
+      </section> -->
 
-
+<!--
       <section class="page__reasons">
         <h2>5 причин "подтянуть" свой английский</h2>
         <ul>
@@ -166,8 +143,8 @@
             - Подготовиться к экзамену по английскому языку
             - Освоите необходимый уровень английского для изучения программирования</li>
         </ul>
-      </section>
-
+      </section> -->
+<!--
       <section>
         <h2>В нашей школе вы сможете:</h2>
         <ul>
@@ -179,12 +156,32 @@
           <li class="">Правильно и красиво говорить</li>
           <li class="">Поймете даже самые сложные грамматические правила</li>
         </ul>
-      </section>
+      </section> -->
 
-      <section class="page__certs">
-        <h2>Тут будет список сертификатов</h2>
+      <section class="page__certs certs">
+        <div class="container certs__container">
+          <h2 class="section-title section-title--light certs__title">Сертификаты</h2>
+          <div class="swiper certs__swiper">
+            <div class="swiper-wrapper" id="grouped-images">
+              <div class="swiper-slide">
+                <img src="./img/documents/Certificate_007.jpg" alt="cert" class="certs__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/documents/Certificate_006.jpg" alt="cert" class="certs__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/documents/Certificate_008.jpg" alt="cert" class="certs__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/documents/Certificate_009.jpg" alt="cert" class="certs__img">
+              </div>
+            </div>
+          </div>
+          <div class="certs__swiper-nav--prev certs__swiper-nav"></div>
+          <div class="certs__swiper-nav--next certs__swiper-nav"></div>
+        </div>
       </section>
-
+<!--
       <section class="page__services">
         <h2>Тут будут перечень услуг/программ</h2>
         <ul>
@@ -202,7 +199,7 @@
 
       <section class="page__contacts">
         <h2>Тут будут основные контакты</h2>
-      </section>
+      </section> -->
 
 
       <!-- <section class="page__how-we-work how-we-work">
@@ -269,7 +266,6 @@
 
       <!-- <section class="page__faq faq">
 
-        <!-- go to cources -->
         <a href="#" class="btn btn--dark-green hero__link" aria-label="Посмотреть курсы">Explore Courses</a>
 
           <li class="faq__question">
@@ -430,7 +426,7 @@
 
     </div>
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__container container">
       <div class="footer__column">
         <a href="" class="footer__logo main-logo">
@@ -438,6 +434,6 @@
         </a>
        </div>
       </div>
-  </footer>
+  </footer> -->
 </body>
 </html>

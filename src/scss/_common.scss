@@ -74,6 +74,18 @@ button:active {
 }
 
 .container {
+  margin-inline: auto;
   padding-inline: $paddingInline;
   max-width: $containerMaxWidth;
+}
+
+
+.section-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.section-title--light {
+  color: $white;
 }
