@@ -1,33 +1,119 @@
 .certs {
-  background-color: $greenPrimary;
 
+  // Общие стили блока
+  padding-block: $gap*4;
+  background-color: $greenPrimary;
+  //---------------------/
+
+  // Внутренний контейнер
   &__container {
     position: relative;
   }
+  //---------------------/
 
+  // Заголовок блока
   &__title {
     margin-bottom: 84px;
   }
+  //---------------------/
 
-  &__swiper {
-    min-height: 600px;
-  }
-
+  // Кнопки навигации слайдера
   &__swiper-nav {
     position: absolute;
-    top: 50%;
-    width: calc(2 * $gap);
-    height: calc(2 * $gap);
+    top: 65%;
+    width: calc($gap * 2);
+    height: calc($gap * 2);
     border: 1px solid $pinkPrimary;
     border-radius: 100%;
+    transition-property: opacity, background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    //---------------------/
 
+    // Состояния для кнопок
+    &:hover,
+    &:focus-visible {
+      background-color: $pinkPrimary;
+      //---------------------/
+
+      // Состояния псевдоэлементов при смене состояний кнопки
+      &::before,
+      &::after {
+        background-color: $greenPrimary;
+      }
+    }
+    //---------------------/
+
+    // Общие стили для псевдоэлементов кнопки
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: calc($gap / 2);
+      height: 1px;
+      background-color: $pinkPrimary;
+      transition-property: background;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+    //---------------------/
+
+    // Состояние задизабленой кнопки
+    &.swiper-button-disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    //---------------------/
+
+    // Стили для каждой кнопки отдельно
     &--prev {
       left: $gap;
-    }
 
+      // Реализация стрелочки
+      &::before {
+        top: 35%;
+        left: 35%;
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        top: 57%;
+        left: 35%;
+        transform: rotate(45deg);
+      }
+    }
+    //---------------------/
+
+     // Стили для каждой кнопки отдельно
     &--next {
       right: $gap;
+
+      // Реализация стрелочки
+      &::before {
+        top: 35%;
+        right: 35%;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        top: 57%;
+        right: 35%;
+        transform: rotate(-45deg);
+      }
     }
+
+    // На планшетах и меньше кнопки убираем
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  //---------------------/
+
+  // Курсор-палец для слайда
+  &__slide {
+    cursor: pointer;
   }
 
 } // certs
+//---------------------/

@@ -30,4 +30,12 @@ $gap: 16px;
 
 // container width
 $containerMaxWidth: 1440px;
-$paddingInline: 80px;
+$paddingInlineDesktop: 80px;
+$paddingInlineTablet: calc($gap * 2);
+$paddingInlineMobile: $gap;
+
+// Breakpoints
+$desktop: 1200px;
+$tablet: 1023px;
+$bigMobile: 767px;
+$mobile: 575px;
