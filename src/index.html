@@ -60,53 +60,45 @@
 <body>
 
   <!-- header -->
-  <!-- <header class="header"> -->
+  <header class="header header--fixed">
 
     <!-- container -->
-    <!-- <div class="container header__container"> -->
-
+    <div class="container header__container">
+      <button class="header__burger">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#" class="header__logo">
+        <img src="./img/logo.png" alt="logo" class="header__img">
+      </a>
       <!-- header nvigation -->
-      <!-- <nav class="header__nav"> -->
-        <!-- <ul class="header__nav-list"> -->
+      <nav class="header__nav">
+        <ul class="header__nav-list">
 
-          <!-- bav items -->
-          <!-- <li class="header__nav-item"><a href="#home"    class="header__nav-link">Home</a></li>
-          <li class="header__nav-item"><a href="#about"   class="header__nav-link">About</a></li>
-          <li class="header__nav-item"><a href="#blog"    class="header__nav-link">Blog</a></li>
-          <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contact</a></li>
-          <li class="header__nav-item"><a href="#courses" class="header__nav-link">Courses</a></li>
+          <!-- nav items -->
+          <li class="header__nav-item"><a href="#home"    class="header__nav-link">Главная</a></li>
+          <li class="header__nav-item"><a href="#reasons"   class="header__nav-link">Для чего</a></li>
+          <li class="header__nav-item"><a href="#introducing"    class="header__nav-link">Обо мне</a></li>
+          <li class="header__nav-item"><a href="#advantages" class="header__nav-link">Преимущества</a></li>
+          <li class="header__nav-item"><a href="#services" class="header__nav-link">Услуги</a></li>
+          <li class="header__nav-item"><a href="#certificates" class="header__nav-link">Сертификаты</a></li>
+          <li class="header__nav-item"><a href="#footer" class="header__nav-link">Контакты</a></li>
         </ul>
-      </nav> -->
+      </nav>
 
       <!-- other info -->
       <!-- <div class="header__info"> -->
 
-        <!-- header search -->
-        <!-- <form action="#" class="header__form">
-          <label for="header-search">
-            <input type="search" placeholder="Search" class="header__input" aria-label="Поиск по сайту">
-          </label>
-        </form> -->
-
-        <!-- go to basket -->
-        <!-- <a href="#" class="header__basket-link" aria-label="Перейти в корзину">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="./img/sprite.svg#shopping_cart"></use>
-          </svg>
-          Cart
-        </a> -->
-
         <!-- sign or log in -->
-        <!-- <button class="header__signup-btn btn btn--light" aria-label="Зарегестрироваться на сайте">Sign Up</button>
-      </div>
+        <button class="header__signup-btn btn btn--light" aria-label="Оставить заявку">Оставить заявку</button>
+      <!-- </div> -->
     </div>
-  </header> -->
+  </header>
 
   <main class="page">
 
-      <!-- <section class="page__intro intro swiper"> -->
+      <section class="page__intro intro swiper">
 
-        <!-- <div class="intro__content">
+        <div class="intro__content">
           <h1 class="intro__title">Школа английского языка Марии Боярской</h1>
           <p class="intro__text">Школа английского языка Марии Боярской предлагает онлайн занятия по подготовке ОГЭ и
             ЕГЭ в мини-группах и индивидуально.
@@ -129,7 +121,7 @@
           Опыт преподавания - более 12 лет,
           кандидат наук, доцент, успешная практика подготовки к экзаменам онлайн и офлайн.
         </p>
-      </section> -->
+      </section>
 
 <!--
       <section class="page__reasons">
@@ -172,18 +164,13 @@
               <div class="swiper-slide certs__slide">
                 <img src="./img/documents/doc4.jpg" alt="cert" class="certs__img">
               </div>
-              <!-- <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc5.jpg" alt="cert" class="certs__img">
-              </div> -->
+
               <div class="swiper-slide certs__slide">
                 <img src="./img/documents/doc6.png" alt="cert" class="certs__img">
               </div>
               <div class="swiper-slide certs__slide">
                 <img src="./img/documents/doc7.jpg" alt="cert" class="certs__img">
               </div>
-              <!-- <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc8.jpg" alt="cert" class="certs__img">
-              </div> -->
               <div class="swiper-slide certs__slide">
                 <img src="./img/documents/doc9.jpg" alt="cert" class="certs__img">
               </div>
@@ -193,7 +180,7 @@
               <div class="swiper-slide certs__slide">
                 <img src="./img/documents/doc11.jpg" alt="cert" class="certs__img">
               </div>
-              <!-- <div class="swiper-slide certs__slide">
+              <div class="swiper-slide certs__slide">
                 <img src="./img/documents/doc12.jpg" alt="cert" class="certs__img">
               </div>
               <div class="swiper-slide certs__slide">
@@ -204,7 +191,13 @@
               </div>
               <div class="swiper-slide certs__slide">
                 <img src="./img/documents/doc15.jpg" alt="cert" class="certs__img">
-              </div> -->
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img src="./img/documents/doc5.jpg" alt="cert" class="certs__img">
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img src="./img/documents/doc8.jpg" alt="cert" class="certs__img">
+              </div>
             </div>
           </div>
           <div class="certs__swiper-nav--prev certs__swiper-nav"></div>
@@ -456,14 +449,17 @@
 
     </div>
   </main>
-  <!-- <footer class="footer">
+  <footer id="footer" class="footer" style="color: black; position: absolute; bottom: 0;" >
     <div class="footer__container container">
-      <div class="footer__column">
-        <a href="" class="footer__logo main-logo">
-          <img class="main-logo__img" src="img/main-logo/light.svg" alt="Логотип проектной компании Евклид">
-        </a>
-       </div>
-      </div>
-  </footer> -->
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit eius ab nobis? Exercitationem, est laborum quo ea saepe nisi, voluptatum aspernatur molestias minus iste rem quod? Architecto delectus at molestias.
+      Quae repellat nihil voluptatem impedit hic aspernatur, libero qui commodi eaque quasi facere quidem perferendis autem deserunt exercitationem natus nesciunt quod corrupti. Optio laudantium sunt molestias libero, quaerat voluptas eaque?
+      Dolorum, numquam? Alias nesciunt molestiae, consequuntur assumenda iure consectetur maxime, quisquam dicta magni numquam error dolores, voluptatibus sequi fuga? Quo dolores aspernatur ea maiores corrupti veniam rerum vitae fugit impedit?
+      Est cupiditate laboriosam molestias ab cumque nostrum, nam assumenda et, sed repudiandae aliquid architecto exercitationem. Non expedita dolore ullam vitae nisi. Consectetur soluta rerum, est maiores odio provident explicabo impedit!
+      Quos optio error nemo, et qui praesentium. Ipsa debitis quam repellendus modi qui. Eos dolorum nihil, explicabo aliquid dicta ducimus quod libero fuga, temporibus dolore quas. Provident maxime mollitia laboriosam?
+      Perferendis, sed facere. Ipsum dicta, illum adipisci quibusdam nemo quisquam animi, nesciunt quaerat maiores laudantium inventore nobis repellat sequi eos nulla iusto est? Itaque blanditiis, dolore nihil commodi nemo iste.
+      Tempora quaerat enim corrupti animi voluptatem, fuga repellat ducimus veritatis voluptatum sit aspernatur earum nulla quo odit, debitis accusamus? Dicta eligendi iste facilis eaque architecto repellat voluptate obcaecati consectetur rerum?
+      Fugit animi maiores, distinctio tenetur modi dolorem sint vitae ex ipsa, voluptate quis repudiandae suscipit ut eum quia nulla culpa labore sapiente odio accusantium aperiam aspernatur eligendi? Vero, amet perferendis.
+    </div>
+  </footer>
 </body>
 </html>

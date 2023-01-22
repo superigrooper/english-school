@@ -1,12 +1,59 @@
 .header {
   background-color: $greenPrimary;
   font-size: 16px;
+  border-bottom: 1px solid $pinkPrimary;
+
+  &--fixed {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-block: 24px;
+  }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+
+    span {
+      width: 30px;
+      height: 2px;
+      background-color: $pinkPrimary;
+    }
+
+    &--active {
+     span {
+      background-color: $bluePrimary;
+
+      &:nth-child(1) {
+        position: absolute;
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+     }
+    }
+  }
+
+  &__logo {
+    width: 100px;
   }
 
   &__info {
@@ -26,39 +73,162 @@
   }
 
   &__nav-link {
+    position: relative;
+    padding: 3px;
     color: $white;
-  }
-
-  &__input {
-    padding: 10px 10px 10px 40px;
-    max-width: 115px;
-    color: $white;
-    background-color: transparent;
-    background-image: url('../img/svg/search.svg');
-    background-repeat: no-repeat;
-    background-position: $gap center;
     outline: none;
-    border: none;
-    border-radius: $gap;
-    transition: outline 0.3s ease-in-out;
+    border: 1px solid transparent;
+    transition-property: color, border-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 
-    &::placeholder {
-      color: $white;
+    &:hover {
+      color: $pinkPrimary;
+      border-bottom-color: $pinkPrimary;
     }
 
-    &:focus {
-      outline: 1px solid $pinkPrimary;
+    &:focus-visible {
+      color: $pinkPrimary;
+      border-color: $pinkPrimary;
     }
-  }
 
-  &__basket-link {
-    display: inline-flex;
-    margin-right: 24px;
-    color: $white;
-
-    svg {
-      margin-right: calc($gap / 2);
+    &:active {
+      color: $pinkPrimary--dark;
+      border-color: $pinkPrimary--dark;
     }
   }
 
+  &__signup-btn {
+    flex-shrink: 0;
+    outline: 1px solid transparent;
+    transition-property: color, outline-color, background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+      background-color: $pinkPrimary;
+    }
+
+    &:focus-visible {
+      background-color: $pinkPrimary--ligth;
+    }
+
+    &:active {
+      background-color: $pinkPrimary--dark;
+    }
+  }
+
+  &--mobile {
+    .header__nav {
+      display: none;
+    }
+  }
+
+  @media (max-width: $desktop) {
+
+    &__signup-btn {
+      padding: 10px 15px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+
+    &__container {
+      justify-content: space-between;
+    }
+
+    &__burger {
+      display: flex;
+    }
+
+    &__logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: none;
+      padding-top: calc($gap * 6);
+      padding-left: calc($gap * 2);
+      width: 100%;
+      height: 100%;
+      transition-property: transform;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+      background-color: $pinkPrimary;
+      transform: translateX(-100%);
+      z-index: 100;
+      overflow-y: auto;
+
+      &--block {
+        display: block;
+      }
+
+      &--active {
+        transform: none;
+      }
+    }
+
+    &__nav-list {
+      flex-direction: column;
+    }
+
+    &__nav-link {
+      font-size: 18px;
+      color: $bluePrimary;
+
+      &:hover {
+        color: $greenPrimary;
+        border-bottom-color: $greenPrimary;
+      }
+
+      &:focus {
+        color: $greenPrimary;
+        border-color: $greenPrimary;
+      }
+
+      &:active {
+        color: $cardColor;
+      }
+    }
+  } // media 1023
+
+  @media (max-width: $bigMobile) {
+
+    &--fixed {
+      position: static;
+    }
+
+    &__container {
+      justify-content: end;
+    }
+
+    &__burger {
+      position: fixed;
+      right: $gap;
+      bottom: $gap;
+      width: 50px;
+      height: 50px;
+      background-color: $bluePrimary;
+      border-radius: calc($gap / 2);
+
+      &--active {
+        span {
+          background-color: $pinkPrimary;
+        }
+      }
+    }
+
+    &__nav {
+      padding-top: calc($gap * 2);
+    }
+
+    &__nav-link {
+      font-size: 20px;
+    }
+  }
 }

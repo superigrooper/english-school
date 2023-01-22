@@ -36,7 +36,7 @@ ol {
 
 body {
   position: relative;
-  min-height: 100vh;
+  min-height: 3000px;
   font-family: 'Muller';
   font-weight: 400;
   font-size: 18px;
@@ -73,10 +73,18 @@ button:active {
   transform: translateY(1px);
 }
 
+.stop-scroll {
+  overflow: hidden;
+}
+
 .container {
   margin-inline: auto;
-  padding-inline: $paddingInlineDesktop;
+  padding-inline: $paddingInline;
   max-width: $containerMaxWidth;
+
+  @media (max-width: $desktop) {
+    padding-inline: $paddingInlineDesktop;
+  }
 
   @media (max-width: $tablet) {
     padding-inline: $paddingInlineTablet;

@@ -4,6 +4,8 @@
 $white:                 #FFFFFF;
 $greenPrimary:          #00353B;
 $pinkPrimary:           #FCD8CA;
+$pinkPrimary--dark:     #E6AE97;
+$pinkPrimary--ligth:    #E7CFC6;
 $bluePrimary:           #1F2937;
 $greenSecondary:        #22A45A;
 $greenSecondary--light: #AADEA8;
@@ -30,12 +32,13 @@ $gap: 16px;
 
 // container width
 $containerMaxWidth: 1440px;
-$paddingInlineDesktop: 80px;
+$paddingInline: 60px;
+$paddingInlineDesktop: 40px;
 $paddingInlineTablet: calc($gap * 2);
 $paddingInlineMobile: $gap;
 
 // Breakpoints
 $desktop: 1200px;
-$tablet: 1023px;
+$tablet: 1024px;
 $bigMobile: 767px;
 $mobile: 575px;
