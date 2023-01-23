@@ -21,6 +21,6 @@ const certsSwiper = new Swiper('.certs__swiper', {
 });
 
 // Full view
-Fancybox.bind("#grouped-images img", {
+Fancybox.bind('#grouped-images img', {
   groupAll: true,
 });

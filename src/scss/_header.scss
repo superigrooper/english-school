@@ -1,22 +1,30 @@
 .header {
+
+  // Общие стили header
   background-color: $greenPrimary;
   font-size: 16px;
   border-bottom: 1px solid $pinkPrimary;
+  // -------------------- /
 
+  // Модификатор header для прилипания наверху страницы
   &--fixed {
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 100;
   }
+  // -------------------- /
 
+  // Контейнер header
   &__container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-block: 24px;
   }
+  // -------------------- /
 
+  // Кнопка бургер
   &__burger {
     display: none;
     flex-direction: column;
@@ -26,16 +34,22 @@
     height: 40px;
     z-index: 200;
 
+    // Три полоски внутри реализованы тремя span
     span {
       width: 30px;
       height: 2px;
       background-color: $pinkPrimary;
     }
+    // -------------------- /
 
+    // Модификатор для активного (раскрытого) состояния бургера
     &--active {
+
+      // У span меняем цвет
      span {
       background-color: $bluePrimary;
 
+      // Манипуляции с поворотами и исчезновениями span
       &:nth-child(1) {
         position: absolute;
         transform: rotate(45deg);
@@ -49,29 +63,38 @@
         transform: rotate(-45deg);
       }
      }
-    }
-  }
+     // -------------------- /
 
+    }
+    // -------------------- /
+
+  }
+  // -------------------- /
+
+  // Логотип
   &__logo {
     width: 100px;
   }
+  // -------------------- /
 
-  &__info {
-    display: flex;
-    align-items: center;
-    gap: $gap;
-  }
 
+  // Навигация
   &__nav {
     margin-inline: auto;
   }
+  // -------------------- /
 
+
+  // Сам список
   &__nav-list {
     display: flex;
     flex-wrap: wrap;
     gap: $gap;
   }
+  // -------------------- /
 
+
+  // Ссылки
   &__nav-link {
     position: relative;
     padding: 3px;
@@ -81,7 +104,9 @@
     transition-property: color, border-color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+    // -------------------- /
 
+    // Состояния ссылок
     &:hover {
       color: $pinkPrimary;
       border-bottom-color: $pinkPrimary;
@@ -96,15 +121,21 @@
       color: $pinkPrimary--dark;
       border-color: $pinkPrimary--dark;
     }
-  }
+    // -------------------- /
 
+  }
+  // -------------------- /
+
+  // Кнопка "оставить заявку", P.S. класс остался прежним
   &__signup-btn {
     flex-shrink: 0;
     outline: 1px solid transparent;
     transition-property: color, outline-color, background;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+    // -------------------- /
 
+    // Состояния кнопки
     &:hover {
       background-color: $pinkPrimary;
     }
@@ -117,15 +148,12 @@
       background-color: $pinkPrimary--dark;
     }
   }
+  // -------------------- /
 
-  &--mobile {
-    .header__nav {
-      display: none;
-    }
-  }
 
   @media (max-width: $desktop) {
 
+    // Меньшие padding
     &__signup-btn {
       padding: 10px 15px;
     }
@@ -142,11 +170,10 @@
     }
 
     &__logo {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(50%);
     }
 
+    // Мобильная навигация
     &__nav {
       position: fixed;
       top: 0;
@@ -195,18 +222,15 @@
         color: $cardColor;
       }
     }
-  } // media 1023
+  }
 
   @media (max-width: $bigMobile) {
 
-    &--fixed {
-      position: static;
-    }
-
     &__container {
-      justify-content: end;
+      justify-content: space-between;
     }
 
+    // На экране шириной < 768px кнопка бургера перемещается впрво-вниз
     &__burger {
       position: fixed;
       right: $gap;
@@ -223,6 +247,10 @@
       }
     }
 
+    &__logo {
+      transform: none;
+    }
+
     &__nav {
       padding-top: calc($gap * 2);
     }
@@ -232,3 +260,4 @@
     }
   }
 }
+// -------------------- /

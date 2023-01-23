@@ -1,202 +1,262 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- author and desc -->
+    <meta name="author" content="Зеленый шмель">
+    <meta name="description" content="Школа английского языка Марии Боярской">
 
-  <!-- author and desc -->
-  <meta name="author" content="Зеленый шмель">
-  <meta name="description" content="Школа английского языка Марии Боярской">
+    <!-- main title -->
+    <title>Школа английского языка Марии Боярской</title>
+    <!-- favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+  >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+  >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+  >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./img/favicons/android-chrome-512x512.png"
+  >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./img/favicons/android-chrome-192x192.png"
+  >
+    <link rel="icon" href="./favicon.ico" type="image/svg+xml">
 
-  <!-- main title -->
-  <title>Школа английского языка Марии Боярской</title>
-  <!-- favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="./img/favicons/android-chrome-512x512.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-chrome-192x192.png">
-  <link rel="icon" href="./favicon.ico" type="image/svg+xml">
+    <!-- webmanifest -->
+    <link rel="manifest" href="/site.webmanifest">
 
-  <!-- webmanifest -->
-  <link rel="manifest" href="/site.webmanifest">
+    <!-- fonts -->
+    <link rel="preload" href="./assets/" as="font" crossorigin>
+    <link
+      rel="preload"
+      href="./assets/fonts/MullerMedium.woff2"
+      as="font"
+      crossorigin
+  >
+    <link
+      rel="preload"
+      href="./assets/fonts/MullerBold.woff2"
+      as="font"
+      crossorigin
+  >
+    <link
+      rel="preload"
+      href="./assets/fonts/MullerLightItalic.woff2"
+      as="font"
+      crossorigin
+  >
+    <link
+      rel="preload"
+      href="./assets/fonts/MullerRegularItalic.woff2"
+      as="font"
+      crossorigin
+  >
+    <link
+      rel="preload"
+      href="./assets/fonts/OpenSans-Regular.woff2"
+      as="font"
+      crossorigin
+  >
 
-  <!-- fonts -->
-  <link rel="preload" href="./assets/" as="font" crossorigin>
-  <link rel="preload" href="./assets/fonts/MullerMedium.woff2" as="font" crossorigin>
-  <link rel="preload" href="./assets/fonts/MullerBold.woff2" as="font" crossorigin>
-  <link rel="preload" href="./assets/fonts/MullerLightItalic.woff2" as="font" crossorigin>
-  <link rel="preload" href="./assets/fonts/MullerRegularItalic.woff2" as="font" crossorigin>
-  <link rel="preload" href="./assets/fonts/OpenSans-Regular.woff2" as="font" crossorigin>
+    <!-- style libs -->
+    <link rel="stylesheet" href="./assets/libs/css/accordion.min.css">
+    <link rel="stylesheet" href="./assets/libs/css/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/css/simplebar.min.css">
+    <link rel="stylesheet" href="./assets/libs/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/libs/css/fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/css/normalize.css">
 
-  <!-- style libs -->
-  <link rel="stylesheet" href="./assets/libs/css/accordion.min.css">
-  <link rel="stylesheet" href="./assets/libs/css/choices.min.css">
-  <link rel="stylesheet" href="./assets/libs/css/simplebar.min.css">
-  <link rel="stylesheet" href="./assets/libs/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./assets/libs/css/fancybox.min.css">
-  <link rel="stylesheet" href="./assets/libs/css/normalize.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css">
 
-  <!-- main style -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- scripts libs -->
+    <script src="./assets/libs/js/accordion.min.js" defer></script>
+    <script src="./assets/libs/js/choices.min.js" defer></script>
+    <script src="./assets/libs/js/inputmask.min.js" defer></script>
+    <script src="./assets/libs/js/justvalidate.min.js" defer></script>
+    <script src="./assets/libs/js/popper.min.js" defer></script>
+    <script src="./assets/libs/js/simplebar.min.js" defer></script>
+    <script src="./assets/libs/js/swiper.bundle.min.js" defer></script>
+    <script src="./assets/libs/js/tippy.min.js" defer></script>
+    <script src="./assets/libs/js/fancybox.min.js" defer></script>
 
-  <!-- scripts libs -->
-  <script src="./assets/libs/js/accordion.min.js" defer></script>
-  <script src="./assets/libs/js/choices.min.js" defer></script>
-  <script src="./assets/libs/js/inputmask.min.js" defer></script>
-  <script src="./assets/libs/js/justvalidate.min.js" defer></script>
-  <script src="./assets/libs/js/popper.min.js" defer></script>
-  <script src="./assets/libs/js/simplebar.min.js" defer></script>
-  <script src="./assets/libs/js/swiper.bundle.min.js" defer></script>
-  <script src="./assets/libs/js/tippy.min.js" defer></script>
-  <script src="./assets/libs/js/fancybox.min.js" defer></script>
+    <!-- main script -->
+    <script src="./js/app.js" defer></script>
+  </head>
 
-  <!-- main script -->
-  <script src="./js/app.js" defer></script>
-</head>
-
-<body>
-
-  <!-- header -->
-  <header class="header header--fixed">
-
-    <!-- container -->
-    <div class="container header__container">
-      <button class="header__burger">
-        <span></span><span></span><span></span>
-      </button>
-      <a href="#" class="header__logo">
-        <img src="./img/logo.png" alt="logo" class="header__img">
-      </a>
-      <!-- header nvigation -->
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-
-          <!-- nav items -->
-          <li class="header__nav-item"><a href="#home"    class="header__nav-link">Главная</a></li>
-          <li class="header__nav-item"><a href="#reasons"   class="header__nav-link">Для чего</a></li>
-          <li class="header__nav-item"><a href="#introducing"    class="header__nav-link">Обо мне</a></li>
-          <li class="header__nav-item"><a href="#advantages" class="header__nav-link">Преимущества</a></li>
-          <li class="header__nav-item"><a href="#services" class="header__nav-link">Услуги</a></li>
-          <li class="header__nav-item"><a href="#certificates" class="header__nav-link">Сертификаты</a></li>
-          <li class="header__nav-item"><a href="#footer" class="header__nav-link">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <!-- other info -->
-      <!-- <div class="header__info"> -->
+  <body>
+    <!-- header -->
+    <header class="header header--fixed">
+      <!-- container -->
+      <div class="container header__container">
+        <button class="header__burger">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="#" class="header__logo">
+          <img src="./img/logo.png" alt="logo" class="header__img">
+        </a>
+        <!-- header nvigation -->
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <!-- nav items -->
+            <li class="header__nav-item">
+              <a href="#reasons" class="header__nav-link">Для чего</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#introducing" class="header__nav-link">Обо мне</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#advantages" class="header__nav-link">Преимущества</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#services" class="header__nav-link">Услуги</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#certificates" class="header__nav-link">Сертификаты</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#footer" class="header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
         <!-- sign or log in -->
-        <button class="header__signup-btn btn btn--light" aria-label="Оставить заявку">Оставить заявку</button>
-      <!-- </div> -->
-    </div>
-  </header>
+        <button
+          class="header__signup-btn btn btn--light"
+          aria-label="Оставить заявку"
+        >
+          Оставить заявку
+        </button>
+      </div>
+    </header>
 
-  <main class="page">
-
-      <section class="page__intro intro swiper">
-
-        <div class="intro__content">
-          <h1 class="intro__title">Школа английского языка Марии Боярской</h1>
-          <p class="intro__text">Школа английского языка Марии Боярской предлагает онлайн занятия по подготовке ОГЭ и
-            ЕГЭ в мини-группах и индивидуально.
-            Занятия включают тренировку аудирования, чтения, грамматики, расширение словарного запаса, словообразование,
-            работу над произношением, подробный разбор письменных и устных заданий.</p>
-        </div>
-
-        <div class="intro__swiper-wrapper swiper-wrapper">
-          <div class="swiper-wrapper__slide-1 swiper-slide"></div>
-          <div class="swiper-wrapper__slide-2 swiper-slide"></div>
-          <div class="swiper-wrapper__slide-3 swiper-slide"></div>
-        </div>
-        <div class="intro__swiper-pagination swiper-pagination"></div>
-
-      </section>
-
-      <section class="page__about-me about-me" id="about-me">
-        <h2 class="about-me__title title">Обо мне</h2>
-        <p class="about-me__text text">Меня зовут Мария... Бла-бла-бла...
-          Опыт преподавания - более 12 лет,
-          кандидат наук, доцент, успешная практика подготовки к экзаменам онлайн и офлайн.
-        </p>
-      </section>
-
-<!--
-      <section class="page__reasons">
-        <h2>5 причин "подтянуть" свой английский</h2>
-        <ul>
-          <li class="">Чтобы нравиться девчонкам</li>
-          <li class="">Самый изучаемый язык на планете</li>
-          <li class="">Официальный язык 404 стран мира</li>
-          <li class="">- Изучите или подтянете английский для себя: для путешествий и общения с англоговорящими друзьями и саморазвития
-            - Получите языковую базу для адаптации, постоянного проживания и трудоустройства в другой стране
-            - Подготовиться к экзамену по английскому языку
-            - Освоите необходимый уровень английского для изучения программирования</li>
-        </ul>
-      </section> -->
-<!--
-      <section>
-        <h2>В нашей школе вы сможете:</h2>
-        <ul>
-          <li class="">Избавиться от языкового барьера</li>
-          <li class="">Развивать критическое мышление</li>
-          <li class="">Приводить аргументы на английском языке</li>
-          <li class="">Развивать память с помощью техник запоминания слов и фраз</li>
-          <li class="">Правильно вести записи новых слов</li>
-          <li class="">Правильно и красиво говорить</li>
-          <li class="">Поймете даже самые сложные грамматические правила</li>
-        </ul>
-      </section> -->
-
-      <section class="page__certs certs">
+    <main class="page">
+      <section class="page__certs certs" id="certificates">
         <div class="container certs__container">
-          <h2 class="section-title section-title--light certs__title">Сертификаты</h2>
+          <h2 class="section-title section-title--light certs__title">
+            Сертификаты
+          </h2>
           <div class="swiper certs__swiper">
             <div class="swiper-wrapper" id="grouped-images">
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc1.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc1.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc2.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc2.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc4.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc4.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
 
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc6.png" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc6.png"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc7.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc7.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc9.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc9.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc10.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc10.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc11.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc11.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc12.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc12.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc13.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc13.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc14.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc14.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc15.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc15.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc5.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc5.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
               <div class="swiper-slide certs__slide">
-                <img src="./img/documents/doc8.jpg" alt="cert" class="certs__img">
+                <img
+                  src="./img/documents/doc8.jpg"
+                  alt="cert"
+                  class="certs__img"
+                >
               </div>
             </div>
           </div>
@@ -204,262 +264,6 @@
           <div class="certs__swiper-nav--next certs__swiper-nav"></div>
         </div>
       </section>
-<!--
-      <section class="page__services">
-        <h2>Тут будут перечень услуг/программ</h2>
-        <ul>
-          <li class="">Занятия по подготовке к ОГЭ в мини-группах и индивидуально</li>
-          <li class="">Занятия по подготовке к ОГЭ в мини-группах и индивидуально</li>
-          <li class="">Подготовка к прохождению аттестаций</li>
-          <li class="">Что-то там ещё...</li>
-        </ul>
-      </section>
-
-      <section class="page__sale">
-        <h2>Акция или какая-то другая замануха</h2>
-        <p>Только здесь и сейчас зарегайся, напиши и получишь скидку, +100 к карме и т.п.</p>
-      </section>
-
-      <section class="page__contacts">
-        <h2>Тут будут основные контакты</h2>
-      </section> -->
-
-
-      <!-- <section class="page__how-we-work how-we-work">
-        <h2 class="how-we-work__title title">Как мы работаем</h2>
-        <ul class="how-we-work__steps-list">
-          <li class="how-we-work__step"><button class="how-we-work__step__btn how-we-work__step__btn--active btn"
-              data-path="step-1">1 шаг</button></li>
-          <li class="how-we-work__step"><button class="how-we-work__step__btn btn" data-path="step-2">2 шаг</button>
-          </li>
-          <li class="how-we-work__step"><button class="how-we-work__step__btn btn" data-path="step-3">3 шаг</button>
-          </li>
-          <li class="how-we-work__step"><button class="how-we-work__step__btn btn" data-path="step-4">4 шаг</button>
-          </li>
-        </ul>
-        <div class="how-we-work__slide how-we-work__slide--active how-we-work__slide-1" data-target="step-1">
-          <h3 class="how-we-work__medium-headline">Проводим консультацию</h3>
-          <p class="how-we-work__text text">Влечет за собой процесс внедрения и модернизации приоритизации разума над
-            эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
-            объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов,
-            инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь
-            частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой
-            серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии
-            освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны
-            к ответу.</p>
-          <button class="how-we-work__btn how-we-work__btn--primary btn btn--dark ">Подробнее</button>
-          <button class="how-we-work__btn how-we-work__btn--additional btn">Договор</button>
-        </div>
-        <div class="how-we-work__slide how-we-work__slide-2" data-target="step-2">
-          <h3 class="how-we-work__medium-headline">Составляем смету</h3>
-          <p class="how-we-work__text text">Внедрения и&nbsp;модернизации приоритизации разума над эмоциями.
-            В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
-            объективно рассмотрены соответствующими инстанциями. А&nbsp;также представители современных социальных
-            резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь
-            всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные исследования
-            подвергнуты целой серии независимых исследований.</p>
-          <button class="how-we-work__btn how-we-work__btn--primary btn btn--dark ">Подробнее</button>
-          <button class="how-we-work__btn how-we-work__btn--additional btn">Договор</button>
-        </div>
-        <div class="how-we-work__slide how-we-work__slide-3" data-target="step-3">
-          <h3 class="how-we-work__medium-headline">Привлекаем подрядчиков</h3>
-          <p class="how-we-work__text text">Идейные соображения высшего порядка, а&nbsp;также новая модель
-            организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень
-            вовлечения представителей целевой аудитории является четким доказательством простого факта:
-            высококачественный прототип будущего проекта напрямую зависит от&nbsp;дальнейших направлений развития.
-            Разнообразный и&nbsp;богатый опыт говорит нам, что новая модель организационной деятельности говорит
-            о&nbsp;возможностях системы массового участия. Принимая во&nbsp;внимание показатели успешности, постоянное
-            информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания
-            по&nbsp;разработке прогресса профессионального сообщества.</p>
-          <button class="how-we-work__btn how-we-work__btn--primary btn btn--dark ">Подробнее</button>
-          <button class="how-we-work__btn how-we-work__btn--additional btn">Договор</button>
-        </div>
-        <div class="how-we-work__slide how-we-work__slide-4" data-target="step-4">
-          <h3 class="how-we-work__medium-headline">Инспектируем все этапы работ</h3>
-          <p class="how-we-work__text text">Высокий уровень вовлечения представителей целевой аудитории является четким
-            доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит
-            от&nbsp;дальнейших направлений развития. Разнообразный и&nbsp;богатый опыт говорит нам, что новая модель
-            организационной деятельности говорит о&nbsp;возможностях системы массового участия. Принимая
-            во&nbsp;внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей
-            деятельности позволяет.</p>
-          <button class="how-we-work__btn how-we-work__btn--primary btn btn--dark ">Подробнее</button>
-          <button class="how-we-work__btn how-we-work__btn--additional btn">Договор</button>
-        </div>
-      </section> -->
-
-      <!-- <section class="page__faq faq">
-
-        <a href="#" class="btn btn--dark-green hero__link" aria-label="Посмотреть курсы">Explore Courses</a>
-
-          <li class="faq__question">
-            <h3 class="faq__header">
-              <button type="button" class="faq__question__button"><span class="faq__question__text">Из&nbsp;чего
-                  формируется конечная стоимость проекта?</span>
-                <svg class="faq__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <ellipse class="faq__icon__circle" cx="25" cy="25" rx="25" ry="25" fill="none" />
-                  <path class="faq__icon__cross" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                    fill="none" />
-                </svg>
-              </button>
-            </h3>
-            <div class="faq__answer">
-              <p>Являясь всего лишь частью общей картины, непосредственные участники технического
-                прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
-                верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью
-                первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой
-                яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими
-                общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации
-                призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль
-                ключевых факторов.</p>
-              <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть
-                призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных
-                слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но
-                неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в
-                свою очередь, должны быть представлены в исключительно положительном свете.</p>
-            </div>
-          </li>
-
-          <li class="faq__question">
-            <h3 class="faq__header">
-              <button type="button" class="faq__question__button"><span class="faq__question__text">У&nbsp;меня есть
-                  свой проект. Сможем&nbsp;ли мы&nbsp;его
-                  доработать&nbsp;<span class="faq__question__slash">/</span>
-                  реализовать?</span>
-                <svg class="faq__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <ellipse class="faq__icon__circle" cx="25" cy="25" rx="25" ry="25" fill="none" />
-                  <path class="faq__icon__cross" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                    fill="none" />
-                </svg>
-              </button>
-            </h3>
-            <div class="faq__answer">
-              <p>Являясь всего лишь частью общей картины, непосредственные участники технического
-                прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
-                верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью
-                первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой
-                яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими
-                общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации
-                призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль
-                ключевых факторов.</p>
-              <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть
-                призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных
-                слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но
-                неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в
-                свою очередь, должны быть представлены в исключительно положительном свете.</p>
-            </div>
-          </li>
-
-          <li class="faq__question">
-            <h3 class="faq__header">
-              <button type="button" class="faq__question__button"><span class="faq__question__text">Я&nbsp;выбираю между
-                  разными компаниями. В&nbsp;чём ваше отличие?</span>
-                <svg class="faq__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <ellipse class="faq__icon__circle" cx="25" cy="25" rx="25" ry="25" fill="none" />
-                  <path class="faq__icon__cross" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                    fill="none" />
-                </svg>
-              </button>
-            </h3>
-            <div class="faq__answer">
-              <p>Являясь всего лишь частью общей картины, непосредственные участники технического
-                прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
-                верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью
-                первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой
-                яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими
-                общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации
-                призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль
-                ключевых факторов.</p>
-              <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть
-                призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных
-                слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но
-                неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в
-                свою очередь, должны быть представлены в исключительно положительном свете.</p>
-            </div>
-          </li>
-
-          <li class="faq__question">
-            <h3 class="faq__header">
-              <button type="button" class="faq__question__button"><span class="faq__question__text">Могу&nbsp;ли
-                  я&nbsp;делегировать вам работу&nbsp;<span class="faq__question__slash">/</span> согласование
-                  с&nbsp;подрядчиком&nbsp;<span class="faq__question__slash">/</span> организацией?</span>
-                <svg class="faq__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <ellipse class="faq__icon__circle" cx="25" cy="25" rx="25" ry="25" fill="none" />
-                  <path class="faq__icon__cross" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                    fill="none" />
-                </svg>
-              </button>
-            </h3>
-            <div class="faq__answer">
-              <p>Являясь всего лишь частью общей картины, непосредственные участники технического
-                прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
-                верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью
-                первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой
-                яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими
-                общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации
-                призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль
-                ключевых факторов.</p>
-              <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть
-                призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных
-                слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но
-                неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в
-                свою очередь, должны быть представлены в исключительно положительном свете.</p>
-            </div>
-          </li>
-          <li class="faq__question">
-            <h3 class="faq__header">
-              <button type="button" class="faq__question__button"><span class="faq__question__text">Могу&nbsp;ли
-                  я&nbsp;вернуть деньги на&nbsp;каком-либо из&nbsp;этапов
-                  работ?</span>
-                <svg class="faq__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <ellipse class="faq__icon__circle" cx="25" cy="25" rx="25" ry="25" fill="none" />
-                  <path class="faq__icon__cross" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                    fill="none" />
-                </svg>
-              </button>
-            </h3>
-            <div class="faq__answer">
-              <p>Являясь всего лишь частью общей картины, непосредственные участники технического
-                прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
-                верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью
-                первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой
-                яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими
-                общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации
-                призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль
-                ключевых факторов.</p>
-              <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть
-                призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных
-                слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но
-                неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в
-                свою очередь, должны быть представлены в исключительно положительном свете.</p>
-            </div>
-          </li>
-        </ul>
-
-      </section> -->
-
-    </div>
-  </main>
-  <footer id="footer" class="footer" style="color: black; position: absolute; bottom: 0;" >
-    <div class="footer__container container">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit eius ab nobis? Exercitationem, est laborum quo ea saepe nisi, voluptatum aspernatur molestias minus iste rem quod? Architecto delectus at molestias.
-      Quae repellat nihil voluptatem impedit hic aspernatur, libero qui commodi eaque quasi facere quidem perferendis autem deserunt exercitationem natus nesciunt quod corrupti. Optio laudantium sunt molestias libero, quaerat voluptas eaque?
-      Dolorum, numquam? Alias nesciunt molestiae, consequuntur assumenda iure consectetur maxime, quisquam dicta magni numquam error dolores, voluptatibus sequi fuga? Quo dolores aspernatur ea maiores corrupti veniam rerum vitae fugit impedit?
-      Est cupiditate laboriosam molestias ab cumque nostrum, nam assumenda et, sed repudiandae aliquid architecto exercitationem. Non expedita dolore ullam vitae nisi. Consectetur soluta rerum, est maiores odio provident explicabo impedit!
-      Quos optio error nemo, et qui praesentium. Ipsa debitis quam repellendus modi qui. Eos dolorum nihil, explicabo aliquid dicta ducimus quod libero fuga, temporibus dolore quas. Provident maxime mollitia laboriosam?
-      Perferendis, sed facere. Ipsum dicta, illum adipisci quibusdam nemo quisquam animi, nesciunt quaerat maiores laudantium inventore nobis repellat sequi eos nulla iusto est? Itaque blanditiis, dolore nihil commodi nemo iste.
-      Tempora quaerat enim corrupti animi voluptatem, fuga repellat ducimus veritatis voluptatum sit aspernatur earum nulla quo odit, debitis accusamus? Dicta eligendi iste facilis eaque architecto repellat voluptate obcaecati consectetur rerum?
-      Fugit animi maiores, distinctio tenetur modi dolorem sint vitae ex ipsa, voluptate quis repudiandae suscipit ut eum quia nulla culpa labore sapiente odio accusantium aperiam aspernatur eligendi? Vero, amet perferendis.
-    </div>
-  </footer>
-</body>
+    </main>
+  </body>
 </html>
