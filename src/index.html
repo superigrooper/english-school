@@ -1,213 +1,489 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- author and desc -->
+    <meta name="author" content="Зеленый шмель" />
+    <meta name="description" content="Школа английского языка Марии Боярской" />
 
-  <!-- author and desc -->
-  <meta name="author" content="Зеленый шмель">
-  <meta name="description" content="Школа английского языка Марии Боярской">
+    <!-- main title -->
+    <title>Школа английского языка Марии Боярской</title>
+    <!-- favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./img/favicons/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./img/favicons/android-chrome-192x192.png"
+    />
+    <link rel="icon" href="./favicon.ico" type="image/svg+xml" />
 
-  <!-- main title -->
-  <title>Школа английского языка Марии Боярской</title>
-  <!-- favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="./img/favicons/android-chrome-512x512.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-chrome-192x192.png">
-  <link rel="icon" href="./favicon.ico" type="image/svg+xml">
+    <!-- webmanifest -->
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- webmanifest -->
-  <link rel="manifest" href="/site.webmanifest">
+    <!-- fonts -->
+    <link rel="preload" href="./assets/" as="font" crossorigin />
+    <link
+      rel="preload"
+      href="./assets/fonts/MullerMedium.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/MullerBold.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/MullerLightItalic.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/MullerRegularItalic.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/OpenSans-Regular.woff2"
+      as="font"
+      crossorigin
+    />
 
-  <!-- fonts -->
-  <link rel="preload" href="./assets/" as="font" crossorigin>
-  <link rel="preload" href="./assets/fonts/MullerMedium.woff2" as="font" crossorigin>
-  <link rel="preload" href="./assets/fonts/MullerBold.woff2" as="font" crossorigin>
-  <link rel="preload" href="./assets/fonts/MullerLightItalic.woff2" as="font" crossorigin>
-  <link rel="preload" href="./assets/fonts/MullerRegularItalic.woff2" as="font" crossorigin>
-  <link rel="preload" href="./assets/fonts/OpenSans-Regular.woff2" as="font" crossorigin>
+    <!-- style libs -->
+    <link rel="stylesheet" href="./assets/libs/css/accordion.min.css" />
+    <link rel="stylesheet" href="./assets/libs/css/choices.min.css" />
+    <link rel="stylesheet" href="./assets/libs/css/simplebar.min.css" />
+    <link rel="stylesheet" href="./assets/libs/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/libs/css/fancybox.min.css" />
+    <link rel="stylesheet" href="./assets/libs/css/normalize.css" />
 
-  <!-- style libs -->
-  <link rel="stylesheet" href="./assets/libs/css/accordion.min.css">
-  <link rel="stylesheet" href="./assets/libs/css/choices.min.css">
-  <link rel="stylesheet" href="./assets/libs/css/simplebar.min.css">
-  <link rel="stylesheet" href="./assets/libs/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./assets/libs/css/fancybox.min.css">
-  <link rel="stylesheet" href="./assets/libs/css/normalize.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- main style -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- scripts libs -->
+    <script src="./assets/libs/js/accordion.min.js" defer></script>
+    <script src="./assets/libs/js/choices.min.js" defer></script>
+    <script src="./assets/libs/js/inputmask.min.js" defer></script>
+    <script src="./assets/libs/js/justvalidate.min.js" defer></script>
+    <script src="./assets/libs/js/popper.min.js" defer></script>
+    <script src="./assets/libs/js/simplebar.min.js" defer></script>
+    <script src="./assets/libs/js/swiper.bundle.min.js" defer></script>
+    <script src="./assets/libs/js/tippy.min.js" defer></script>
+    <script src="./assets/libs/js/fancybox.min.js" defer></script>
 
-  <!-- scripts libs -->
-  <script src="./assets/libs/js/accordion.min.js" defer></script>
-  <script src="./assets/libs/js/choices.min.js" defer></script>
-  <script src="./assets/libs/js/inputmask.min.js" defer></script>
-  <script src="./assets/libs/js/justvalidate.min.js" defer></script>
-  <script src="./assets/libs/js/popper.min.js" defer></script>
-  <script src="./assets/libs/js/simplebar.min.js" defer></script>
-  <script src="./assets/libs/js/swiper.bundle.min.js" defer></script>
-  <script src="./assets/libs/js/tippy.min.js" defer></script>
-  <script src="./assets/libs/js/fancybox.min.js" defer></script>
+    <!-- main script -->
+    <script src="./js/app.js" defer></script>
+  </head>
 
-  <!-- main script -->
-  <script src="./js/app.js" defer></script>
-</head>
+  <body>
+    <!-- header -->
+    <header class="header header--fixed">
+      <!-- container -->
+      <div class="container header__container">
+        <button class="header__burger">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="#" class="header__logo">
+          <img src="./img/logo.png" alt="logo" class="header__img" />
+        </a>
+        <!-- header nvigation -->
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <!-- nav items -->
+            <li class="header__nav-item">
+              <a href="#reasons" class="header__nav-link">Для чего</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#introducing" class="header__nav-link">Обо мне</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#advantages" class="header__nav-link">Преимущества</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#services" class="header__nav-link">Услуги</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#certificates" class="header__nav-link">Сертификаты</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contacts" class="header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-<body>
-  <!-- header -->
-  <header class="header header--fixed">
-    <!-- container -->
-    <div class="container header__container">
-      <button class="header__burger">
-        <span></span><span></span><span></span>
-      </button>
-      <a href="#" class="header__logo">
-        <img src="./img/logo.png" alt="logo" class="header__img">
-      </a>
-      <!-- header nvigation -->
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <!-- nav items -->
-          <li class="header__nav-item">
-            <a href="#reasons" class="header__nav-link">Для чего</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#introducing" class="header__nav-link">Обо мне</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#advantages" class="header__nav-link">Преимущества</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#services" class="header__nav-link">Услуги</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#certificates" class="header__nav-link">Сертификаты</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#footer" class="header__nav-link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- sign or log in -->
-      <button class="header__signup-btn btn btn--light" aria-label="Оставить заявку">
-        Оставить заявку
-      </button>
-    </div>
-  </header>
-
-  <main class="page">
-
-    <section class="page__hero hero" id="hero">
-      <div class="container hero__container">
-        <h1 class="hero__title section-title section-title--light">
-          Школа английского языка Марии Боярской
-        </h1>
-        <p class="hero__desc">
-          Школа английского языка Марии Боярской предлагает онлайн занятия по&nbsp;подготовке ОГЭ и&nbsp;ЕГЭ
-          в&nbsp;мини-группах и&nbsp;индивидуально. Занятия включают тренировку аудирования, чтения, грамматики,
-          расширение словарного запаса, словообразование, работу над произношением, подробный разбор письменных
-          и&nbsp;устных заданий.
-        </p>
-        <picture class="hero__photo">
-          <source srcset="img/author/Maria.jpg" media="(orientation: portrait)">
-          <img class="hero__photo__img"src="img/author/Maria.jpg" alt="Maria Boyarskaya">
-        </picture>
+        <!-- sign or log in -->
+        <button
+          class="header__signup-btn btn btn--light"
+          aria-label="Записаться  на курс"
+        >
+          Записаться на курс
+        </button>
       </div>
-    </section>
+    </header>
 
-    <section class="page__five-reasons five-reasons" id="five-reasons">
-    </section>
+    <main class="page">
+      <section class="page__hero hero" id="hero">
+        <div class="container hero__container">
+          <h1 class="hero__title section-title section-title--light">
+            Школа английского языка Марии Боярской
+          </h1>
+          <p class="hero__desc">
+            Школа английского языка Марии Боярской предлагает онлайн занятия
+            по&nbsp;подготовке ОГЭ и&nbsp;ЕГЭ в&nbsp;мини-группах
+            и&nbsp;индивидуально. Занятия включают тренировку аудирования,
+            чтения, грамматики, расширение словарного запаса, словообразование,
+            работу над произношением, подробный разбор письменных и&nbsp;устных
+            заданий.
+          </p>
+          <picture class="hero__photo">
+            <source
+              srcset="img/author/Maria.jpg"
+              media="(orientation: portrait)"
+            />
+            <img
+              class="hero__photo__img"
+              src="img/author/Maria.jpg"
+              alt="Maria Boyarskaya"
+            />
+          </picture>
+        </div>
+      </section>
 
-    <section class="page__introducing introducing" id="introducing">
-      <div class="container introducing__container">
-        <h2 class="introducing__title section-title">
-          Обо мне
-        </h2>
-        <p class="introducing__desc">
-          Меня зовут Мария Боярская, я&nbsp;преподаю английский язык с&nbsp;2010 года и&nbsp;уже 4&nbsp;года
-          (с&nbsp;2018&nbsp;г.) готовлю к&nbsp;государственным экзаменам.
-          Моя экспертность: доцент кафедры лингвистической подготовки ИАТЭ НИЯУ МИФИ, кандидат филолгических наук, курсы
-          повышения квалификации, курсы подготовки к&nbsp;ОГЭ и&nbsp;ЕГЭ онлайн и&nbsp;офлайн.
-        </p>
-        <picture class="introducing__photo">
-          <source srcset="img/author/Maria.jpg" media="(orientation: portrait)">
-          <img class="introducing__photo__img" src="img/author/IMG_20211231_211005_Bokeh.jpg" alt="Maria Boyarskaya - 2">
-        </picture>
-      </div>
-    </section>
+      <section
+        class="page__five-reasons five-reasons"
+        id="five-reasons"
+      ></section>
 
-    <section class="page__advatages advatages" id="advatages">
-    </section>
+      <section class="page__introducing introducing" id="introducing">
+        <div class="container introducing__container">
+          <h2 class="introducing__title section-title">Обо мне</h2>
+          <p class="introducing__desc">
+            Меня зовут Мария Боярская, я&nbsp;преподаю английский язык
+            с&nbsp;2010 года и&nbsp;уже 4&nbsp;года (с&nbsp;2018&nbsp;г.)
+            готовлю к&nbsp;государственным экзаменам. Моя экспертность: доцент
+            кафедры лингвистической подготовки ИАТЭ НИЯУ МИФИ, кандидат
+            филолгических наук, курсы повышения квалификации, курсы подготовки
+            к&nbsp;ОГЭ и&nbsp;ЕГЭ онлайн и&nbsp;офлайн.
+          </p>
+          <picture class="introducing__photo">
+            <source
+              srcset="img/author/Maria.jpg"
+              media="(orientation: portrait)"
+            />
+            <img
+              class="introducing__photo__img"
+              src="img/author/IMG_20211231_211005_Bokeh.jpg"
+              alt="Maria Boyarskaya - 2"
+            />
+          </picture>
+        </div>
+      </section>
 
-    <section class="page__services services" id="services">
-    </section>
+      <section class="page__advatages advatages" id="advatages"></section>
 
-    <section class="page__certs certs" id="certificates">
-      <div class="container certs__container">
-        <h2 class="section-title section-title--light certs__title">
-          Сертификаты
-        </h2>
-        <div class="swiper certs__swiper">
-          <div class="swiper-wrapper" id="grouped-images">
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc1.jpg" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc2.jpg" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc4.jpg" alt="cert" class="certs__img">
-            </div>
+      <section class="page__services services" id="services"></section>
 
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc6.png" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc7.jpg" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc9.jpg" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc10.jpg" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc11.jpg" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc12.jpg" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc13.jpg" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc14.jpg" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc15.jpg" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc5.jpg" alt="cert" class="certs__img">
-            </div>
-            <div class="swiper-slide certs__slide">
-              <img src="./img/documents/doc8.jpg" alt="cert" class="certs__img">
+      <section class="page__certs certs" id="certificates">
+        <div class="container certs__container">
+          <h2 class="section-title section-title--light certs__title">
+            Сертификаты
+          </h2>
+          <div class="swiper certs__swiper">
+            <div class="swiper-wrapper" id="grouped-images">
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc1.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc2.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc4.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc6.png"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc7.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc9.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc10.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc11.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc12.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc13.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc14.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc15.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc5.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
+              <div class="swiper-slide certs__slide">
+                <img
+                  src="./img/documents/doc8.jpg"
+                  alt="cert"
+                  class="certs__img"
+                />
+              </div>
             </div>
           </div>
+          <div class="certs__swiper-nav--prev certs__swiper-nav"></div>
+          <div class="certs__swiper-nav--next certs__swiper-nav"></div>
         </div>
-        <div class="certs__swiper-nav--prev certs__swiper-nav"></div>
-        <div class="certs__swiper-nav--next certs__swiper-nav"></div>
+      </section>
+
+      <section class="page__contacts contacts" id="contacts">
+        <div class="container">
+          <h2 class="section-title contacts__title section-title--light">
+            Контакты
+          </h2>
+          <ul class="contacts__main-list">
+            <li class="contacts__main-list-item">
+              <h3 class="contacts__subtitle">Pages</h3>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Home</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">About</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Contact</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Blog</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Courses</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Teachers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="contacts__main-list-item">
+              <h3 class="contacts__subtitle">CMS Pages</h3>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Blog Post</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Blog Categories</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Courses Single</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Courses Categories</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Product Page</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Product Categories</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Teachers Single</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Episode Single</a>
+                </li>
+              </ul>
+            </li>
+            <li class="contacts__main-list-item">
+              <h3 class="contacts__subtitle">Account Pages</h3>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Login</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Sign Up</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Forgot Password</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Reset Password</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Email Confirmation</a>
+                </li>
+              </ul>
+            </li>
+            <li class="contacts__main-list-item">
+              <h3 class="contacts__subtitle">Utility Pages</h3>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Style Guide</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Changelog</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Licenses</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">404</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">Password</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container footer__container">
+        <span class="footer__text">&copy; english-school</span>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link" aria-label="Перейти на facebook">
+              <svg
+                width="10"
+                height="18"
+                viewBox="0 0 10 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.5 3H6.5C5.9477 3 5.5 3.44772 5.5 4V7H9.5C9.6137 6.99748 9.7216 7.0504 9.7892 7.1419C9.8568 7.2334 9.8758 7.352 9.84 7.46L9.1 9.66C9.0318 9.8619 8.8431 9.9984 8.63 10H5.5V17.5C5.5 17.7761 5.2761 18 5 18H2.5C2.22386 18 2 17.7761 2 17.5V10H0.5C0.22386 10 0 9.7761 0 9.5V7.5C0 7.2239 0.22386 7 0.5 7H2V4C2 1.79086 3.7909 0 6 0H9.5C9.7761 0 10 0.22386 10 0.5V2.5C10 2.77614 9.7761 3 9.5 3Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link" aria-label="Перейти в twitter">
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 18 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.9728 2.7174C17.5084 3.33692 16.947 3.87733 16.3103 4.31776C16.3103 4.47959 16.3103 4.64142 16.3103 4.81225C16.3154 7.7511 15.1415 10.5691 13.0518 12.6345C10.962 14.6999 8.1312 15.8399 5.19405 15.7989C3.49599 15.8046 1.81967 15.4169 0.296422 14.6661C0.214282 14.6302 0.161312 14.549 0.161622 14.4593V14.3604C0.161622 14.2313 0.266232 14.1267 0.395272 14.1267C2.06442 14.0716 3.67402 13.4929 4.99634 12.4724C3.48553 12.4419 2.12619 11.5469 1.5006 10.1707C1.46901 10.0956 1.47884 10.0093 1.52657 9.9432C1.57429 9.8771 1.653 9.8407 1.73425 9.8471C2.19342 9.8932 2.65718 9.8505 3.1002 9.7212C1.43239 9.375 0.179212 7.9904 -0.000137933 6.2957C-0.00650793 6.2144 0.029922 6.1357 0.096002 6.0879C0.162072 6.0402 0.248242 6.0303 0.323382 6.062C0.770942 6.2595 1.25409 6.3635 1.74324 6.3676C0.281842 5.40846 -0.349388 3.58405 0.206552 1.92622C0.263942 1.76513 0.401812 1.64612 0.569502 1.61294C0.737182 1.57975 0.909962 1.63728 1.02432 1.76439C2.99639 3.86325 5.70604 5.11396 8.5819 5.25279C8.5083 4.95885 8.4721 4.65676 8.4741 4.35372C8.501 2.76472 9.4842 1.34921 10.9634 0.769872C12.4425 0.190542 14.1249 0.562032 15.223 1.71044C15.9714 1.56785 16.695 1.31645 17.3707 0.964212C17.4202 0.933312 17.483 0.933312 17.5325 0.964212C17.5634 1.01373 17.5634 1.07652 17.5325 1.12604C17.2052 1.87552 16.6523 2.50412 15.9509 2.92419C16.5651 2.85296 17.1685 2.70807 17.7482 2.49264C17.797 2.45942 17.8611 2.45942 17.9099 2.49264C17.9508 2.51134 17.9814 2.54711 17.9935 2.59042C18.0056 2.63373 17.998 2.68018 17.9728 2.7174Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link" aria-label="Перейти в instagram">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13 0H5C2.23858 0 0 2.23858 0 5V13C0 15.7614 2.23858 18 5 18H13C15.7614 18 18 15.7614 18 13V5C18 2.23858 15.7614 0 13 0ZM16.25 13C16.2445 14.7926 14.7926 16.2445 13 16.25H5C3.20735 16.2445 1.75549 14.7926 1.75 13V5C1.75549 3.20735 3.20735 1.75549 5 1.75H13C14.7926 1.75549 16.2445 3.20735 16.25 5V13ZM13.75 5.25C14.3023 5.25 14.75 4.80228 14.75 4.25C14.75 3.69772 14.3023 3.25 13.75 3.25C13.1977 3.25 12.75 3.69772 12.75 4.25C12.75 4.80228 13.1977 5.25 13.75 5.25ZM9 4.5C6.51472 4.5 4.5 6.51472 4.5 9C4.5 11.4853 6.51472 13.5 9 13.5C11.4853 13.5 13.5 11.4853 13.5 9C13.5027 7.8057 13.0294 6.65957 12.1849 5.81508C11.3404 4.97059 10.1943 4.49734 9 4.5ZM6.25 9C6.25 10.5188 7.4812 11.75 9 11.75C10.5188 11.75 11.75 10.5188 11.75 9C11.75 7.4812 10.5188 6.25 9 6.25C7.4812 6.25 6.25 7.4812 6.25 9Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-    </section>
-
-    <section class="page__contacts contacts" id="contacts">
-    </section>
-
-  </main>
-</body>
-
+    </footer>
+  </body>
 </html>
