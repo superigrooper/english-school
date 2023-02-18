@@ -1,16 +1,15 @@
 .advantages {
-  min-height: 1000px;
   color: $greenPrimary;
   background-color: $white;
 
   &__container {
-    padding-top: 372px;
-    padding-bottom: 80px;
+    padding-block: calc($gap * 6);
+    padding-bottom: calc(250px + $gap * 6);
     position: relative;
   }
 
   &__title {
-    margin: 115px 0 30px;
+    margin-top: $gap;
     padding-left: 60%;
     font-size: 56px;
     font-weight: 400;
