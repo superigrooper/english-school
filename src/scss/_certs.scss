@@ -1,7 +1,7 @@
 .certs {
 
   // Общие стили блока
-  padding-block: calc($gap * 4);
+  padding-block: calc($gap * 6);
   background-color: $greenPrimary;
   //---------------------/
 
@@ -25,7 +25,7 @@
   // Кнопки навигации слайдера
   &__swiper-nav {
     position: absolute;
-    top: 60%;
+    top: 50%;
     width: calc($gap * 2);
     height: calc($gap * 2);
     border: 1px solid $pinkPrimary;
@@ -66,8 +66,7 @@
 
     // Состояние задизабленой кнопки
     &.swiper-button-disabled {
-      opacity: 0.5;
-      pointer-events: none;
+      display: none;
     }
     //---------------------/
 
@@ -77,7 +76,7 @@
 
       // Реализация стрелочки
       &::before {
-        top: 35%;
+        top: 40%;
         left: 35%;
         transform: rotate(-45deg);
       }
@@ -96,7 +95,7 @@
 
       // Реализация стрелочки
       &::before {
-        top: 35%;
+        top: 40%;
         right: 35%;
         transform: rotate(45deg);
       }
