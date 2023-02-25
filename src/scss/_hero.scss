@@ -24,15 +24,12 @@
   &__photo {
     position: absolute;
     top: 0;
-    // right: inherit;: 60%;
     right: $paddingInline;
+  }
 
-
-    &__img {
-      max-height: 700px;
-      width: auto;
-      border-radius: calc(1.5 * $gap);
-    }
+  &__img {
+    max-height: 700px;
+    border-radius: calc(1.5 * $gap);
   }
 
   @media (max-width: $tablet) {
@@ -48,16 +45,12 @@
 
     &__desc {
       padding-right: 0;
+      margin-bottom: calc( $gap * 2 );
     }
 
     &__photo {
       position: relative;
       right: 0;
-      // display: none;
-
-        &__img {
-          max-height: $tablet;
-      }
     }
 
 }

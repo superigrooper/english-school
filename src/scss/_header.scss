@@ -234,7 +234,7 @@
     &__burger {
       position: fixed;
       right: $gap;
-      bottom: $gap;
+      bottom: ( $gap * 5 );
       width: 50px;
       height: 50px;
       background-color: $bluePrimary;
@@ -259,5 +259,28 @@
       font-size: 20px;
     }
   }
+
+  @media (max-width: $mobile) {
+
+    &__nav-list {
+      gap: 0;
+    }
+
+    &__nav-link {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    // Меньшие padding
+    &__signup-btn {
+    //  padding: 10px 15px;
+     font-size: 14px;
+   }
+
+   &__burger {
+    bottom: $gap;
+   }
+ }
 }
 // -------------------- /
+
+

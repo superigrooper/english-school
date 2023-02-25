@@ -37,4 +37,11 @@
       background-color: $greenSecondary--light;
     }
   }
+
+  @media (max-width: $mobile) {
+    &__container {
+      flex-direction: column;
+      gap: $gap;
+    }
+  }
 }
