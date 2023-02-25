@@ -30,19 +30,16 @@ const html = () => {
 
 const styles = () => {
   return src('./src/scss/main.scss')
-  .pipe(gulpif(isDev, sourcemaps.init()))
+  .pipe(gulpif(isDev, sourcemaps.init(undefined)))
   .pipe(sass())
   .pipe(concat('style.css'))
-  .pipe(autoprefixer({
-    overrideBrowserslist: ['last 10 versions'],
-    grid: true
-  }
-))
-  .pipe(gulpif(isProd, cleancss({
-    level: 2
-    })))
+  .pipe(autoprefixer({overrideBrowserslist: ['last 5 versions']}))
   .pipe(gcmq())
-  .pipe(gulpif(isDev, sourcemaps.write()))
+  .pipe(gulpif(isProd, cleancss({ level: 1 } ))).on('error', notify.onError({
+      title: 'Minification error',
+      message: 'Error: <%= error.message %>',
+    }))
+  .pipe(gulpif(isDev, sourcemaps.write(undefined, undefined)))
   .pipe(gulpif(isDev, dest('./dev/css')))
   .pipe(gulpif(isProd, dest('./build/css')))
   .pipe(browserSync.stream())
@@ -93,7 +90,7 @@ const scripts = () => {
 const resources = () => {
   return src('./src/assets/**/*')
   .pipe(gulpif(isDev, dest('./dev/assets')))
-  .pipe(gulpif(isProd, dest('./prod/assets')))
+  .pipe(gulpif(isProd, dest('./build/assets')))
 }
 
 const favicon = () => {
