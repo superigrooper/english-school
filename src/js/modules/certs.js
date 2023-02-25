@@ -24,3 +24,10 @@ const certsSwiper = new Swiper('.certs__swiper', {
 Fancybox.bind('#grouped-images img', {
   groupAll: true,
 });
+
+
+// Offset
+const cources = document.querySelector('.courses__container')
+const certs = document.querySelector('.certs')
+const offsetCourcesHeight = cources.offsetHeight
+certs.style.paddingTop = `${offsetCourcesHeight / 1.5}px`
