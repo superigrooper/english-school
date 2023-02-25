@@ -6,6 +6,10 @@
     margin-bottom: $gap;
   }
 
+  &__item {
+    color: $pinkPrimary;
+  }
+
   &__subtitle {
     margin-bottom: calc($gap * 2);
     font-weight: 400;

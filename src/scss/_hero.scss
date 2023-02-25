@@ -1,16 +1,15 @@
 .hero {
-  min-height: 1100px;
+  padding-block: calc($gap * 3);
   color: $white;
   background-color: $greenPrimary;
 
   &__container {
-    padding-top: 48px;
-    padding-bottom: 80px;
+    min-height: 700px;
     position: relative;
   }
 
   &__title {
-    margin: 115px 0 30px;
+    margin-bottom: 30px;
     padding-right: 60%;
     font-size: 56px;
     font-weight: 400;
@@ -19,19 +18,47 @@
 
   &__desc {
     padding-right: 60%;
+    text-align: justify;
   }
 
   &__photo {
     position: absolute;
-    top: 48px;
-    left: 60%;
-    right: 48px;
+    top: 0;
+    // right: inherit;: 60%;
+    right: $paddingInline;
 
 
     &__img {
-      border-radius: 50px;
+      max-height: 700px;
+      width: auto;
+      border-radius: calc(1.5 * $gap);
     }
   }
 
+  @media (max-width: $tablet) {
+    &__container {
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
 
+    &__title {
+      padding-right: 0;
+    }
+
+    &__desc {
+      padding-right: 0;
+    }
+
+    &__photo {
+      position: relative;
+      right: 0;
+      // display: none;
+
+        &__img {
+          max-height: $tablet;
+      }
+    }
+
+}
 }

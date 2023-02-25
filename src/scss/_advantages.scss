@@ -1,35 +1,41 @@
 .advantages {
+  padding-block: calc($gap * 3);
   color: $greenPrimary;
   background-color: $white;
 
   &__container {
-    padding-block: calc($gap * 6);
-    padding-bottom: calc(250px + $gap * 6);
+    min-height: calc(700px + 2 * $paddingInline);
     position: relative;
   }
 
   &__title {
-    margin-top: $gap;
-    padding-left: 60%;
+    margin-bottom: 30px;
+    padding-right: 60%;
     font-size: 56px;
     font-weight: 400;
     line-height: 67px;
   }
 
+  &__list {
+    padding-right: 60%;
+  }
+
   &__item {
-    color: red;
+    // color: red;
   }
 
   // &__photo {
   //   position: absolute;
-  //   top: 372px;
-  //   right: 60%;
-  //   left: 48px;
+  //   top: $paddingInline;
+  //   // right: inherit;: 60%;
+  //   right: $paddingInline;
+
 
   //   &__img {
-  //     border-radius: 50px;
+  //     max-height: 700px;
+  //     width: auto;
+  //     border-radius: calc(1.5 * $gap);
   //   }
   // }
-
 
 }

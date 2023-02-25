@@ -1,17 +1,16 @@
 .introducing {
-  min-height: 1000px;
+  padding-block: calc($gap * 3);
   color: $greenPrimary;
   background-color: $white;
+  // border-bottom: 1px solid $pinkPrimary;
 
   &__container {
-    min-height: 1200px;
-    padding-top: 372px;
-    padding-bottom: 80px;
     position: relative;
+    min-height: 700px;
   }
 
   &__title {
-    margin: 115px 0 30px;
+    margin-bottom: 30px;
     padding-left: 60%;
     font-size: 56px;
     font-weight: 400;
@@ -20,19 +19,39 @@
 
   &__desc {
     padding-left: 60%;
+    text-align: justify;
   }
 
   &__photo {
     position: absolute;
-    top: 372px;
+    top: 0;
     right: 60%;
-    left: 48px;
+    left: $paddingInline;
 
 
     &__img {
-      border-radius: 50px;
+      max-height: 700px;
+      width: auto;
+      border-radius: calc(1.5 * $gap);
+
     }
   }
 
+  @media (max-width: $tablet) {
+    &__container {
+      min-height: 0;
+    }
 
+    &__title {
+      padding-left: 0;
+    }
+
+    &__desc {
+      padding-left: 0;
+    }
+
+    &__photo {
+      display: none;
+    }
+  }
 }
