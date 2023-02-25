@@ -1,0 +1,62 @@
+.contacts {
+  padding: calc($gap * 2) 0;
+  background-color: $greenPrimary;
+
+  &__title {
+    margin-bottom: $gap;
+  }
+
+  &__item {
+    color: $pinkPrimary;
+  }
+
+  &__subtitle {
+    margin-bottom: calc($gap * 2);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+
+  &__main-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+  }
+
+  &__link {
+    position: relative;
+    padding: 3px;
+    font-size: 14px;
+    color: $white;
+    outline: none;
+    border: 1px solid transparent;
+    transition-property: color, border-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    // -------------------- /
+
+    // Состояния ссылок
+    &:hover {
+      color: $pinkPrimary;
+      border-bottom-color: $pinkPrimary;
+    }
+
+    &:focus-visible {
+      color: $pinkPrimary;
+      border-color: $pinkPrimary;
+    }
+
+    &:active {
+      color: $pinkPrimary--dark;
+      border-color: $pinkPrimary--dark;
+    }
+    // -------------------- /
+  }
+}

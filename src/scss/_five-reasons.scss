@@ -1,0 +1,18 @@
+.reasons {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1280px;
+  padding: calc($gap * 8);
+  background-color: $pinkPrimary;
+  border-radius: calc($gap * 1.5);
+
+  &__title {
+    margin-bottom: $gap;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: $gap;
+  }
+}

@@ -1,0 +1,44 @@
+// colors
+
+// common
+$white:                 #FFFFFF;
+$greenPrimary:          #00353B;
+$pinkPrimary:           #FCD8CA;
+$pinkPrimary--dark:     #E6AE97;
+$pinkPrimary--ligth:    #E7CFC6;
+$bluePrimary:           #1F2937;
+$greenSecondary:        #22A45A;
+$greenSecondary--light: #AADEA8;
+
+// layout text
+$txtColorBgLigth:       #4B5563;
+$txtColorBgDark:        #374151;
+$sectionTitleColor:     #1F2937;
+$lightLinkColor:        #111827;
+$lightLinkColor--light: #1F2937;
+
+// text of the review card
+$cardColor:             #1F2937;
+$cardAurthorColor:      #111827;
+$cardDescColor:         #6B7280;
+
+// the text of the post card
+$cardTitle:             #1F2937;
+$cardContent:           #4B5563;
+$cardLinkMore:          #111827;
+
+// gap
+$gap: 16px;
+
+// container width
+$containerMaxWidth: 1440px;
+$paddingInline: 60px;
+$paddingInlineDesktop: 40px;
+$paddingInlineTablet: calc($gap * 2);
+$paddingInlineMobile: $gap;
+
+// Breakpoints
+$desktop: 1440px;
+$tablet: 1024px;
+$bigMobile: 767px;
+$mobile: 575px;
